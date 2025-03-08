@@ -110,9 +110,9 @@ class CCSmoothing(Defense):
                 prompt_copy.perturbable_prompt = kk
 
                 # paraphrase
-                # kk2 = paraphrase_text(kk)
-                # prompt_copy.full_prompt = prompt_copy.full_prompt.replace(prompt_copy.perturbable_prompt, kk2)
-                # prompt_copy.perturbable_prompt = kk2
+                kk2 = paraphrase_text(kk)
+                prompt_copy.full_prompt = prompt_copy.full_prompt.replace(prompt_copy.perturbable_prompt, kk2)
+                prompt_copy.perturbable_prompt = kk2
 
             all_inputs.append(prompt_copy.full_prompt)
 
