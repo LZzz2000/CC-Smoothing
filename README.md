@@ -45,7 +45,7 @@ python main.py \
     --corrupt_pert_type RandomSwapPerturbation \
     --corrupt_pert_pct 5 \
     --corrupt_num_copies 5 \
-		--correct
+    --correct
 ```
 
 2. You can turn the correction function on or off using the switch `--correct`, and control the number of copies and the intensity of perturbations with `corrupt_num_copies` and `corrupt_pert_pct`. You can choose from six perturbation methods: `RandomSwapPerturbation`, `RandomPatchPerturbation`, `RandomInsertPerturbation`, `WordSubstitutePerturbation`, `WordDeletePerturbation`, and `WordInsertPerturbation`. For more details, please refer to `main.py`.
